@@ -1,0 +1,41 @@
+{
+  "name": "rss-crud-api",
+  "version": "0.0.1",
+  "description": "CRUD API assignment from RS School",
+  "author": "vadimukraine",
+  "license": "ISC",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start:dev": "nodemon",
+    "start:prod": "webpack && node public/bundle.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimUkraine/rss-crud-api"
+  },
+  "bugs": {
+    "url": "https://github.com/VadimUkraine/rss-crud-api/issues"
+  },
+  "homepage": "https://github.com/VadimUkraine/rss-crud-api#readme"
+}
