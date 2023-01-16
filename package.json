@@ -8,12 +8,14 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "type": "module",
   "scripts": {
-    "start:dev": "nodemon",
-    "start:prod": "webpack && node public/bundle.js",
+    "start:dev": "cross-env nodemon",
+    "start:prod": "webpack && node public/bundle.cjs",
     "lint": "eslint ."
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "uuid": "^9.0.0"
   },

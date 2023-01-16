@@ -1,12 +1,15 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+
+const DIRNAME = fileURLToPath(new URL('.', import.meta.url));
 
 const webpackConfig = {
-  context: path.resolve(__dirname, 'src'),
+  context: resolve(DIRNAME, 'src'),
   entry: ['./index.js'],
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.cjs',
+    path: resolve(DIRNAME, 'public'),
   },
   resolve: {
     extensions: ['.js'],
@@ -31,4 +34,4 @@ const webpackConfig = {
   mode: 'production',
 };
 
-module.exports = () => webpackConfig;
+export default webpackConfig;
