@@ -34,4 +34,4 @@ const listenSingleServer = (port) => {
   });
 };
 
-export { listenSingleServer };
+export { listenSingleServer, createNewServer };

@@ -41,6 +41,15 @@ class DataStorage {
 
     return userData;
   }
+
+  clear = async () => {
+    this.items = [];
+  }
+
+  setData = async (data) => {
+    this.items = data;
+  }
+
 }
 
 export { DataStorage };
